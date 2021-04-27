@@ -19,7 +19,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap(app)
-gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
+gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False,
+                    base_url=None)
 
 ##CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///blog.db")
@@ -29,6 +30,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
+# Update date in footer
 @app.context_processor
 def inject_current_date():
     return {'current_date': date.today()}
@@ -63,6 +65,7 @@ class BlogPost(db.Model):
     comments = relationship("Comment", back_populates="parent_post")
 
 
+# Comment post
 class Comment(db.Model):
     __tablename__ = "comments"
     id = db.Column(db.Integer, primary_key=True)
@@ -71,6 +74,8 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
     comment_author = relationship("User", back_populates="comments")
     text = db.Column(db.Text, nullable=False)
+
+
 db.create_all()
 
 
@@ -80,6 +85,7 @@ def admin_only(f):
         if current_user.id != 1:
             return abort(403)
         return f(*args, **kwargs)
+
     return decorated_function
 
 
@@ -89,6 +95,7 @@ def get_all_posts():
     return render_template("index.html", all_posts=posts, current_user=current_user)
 
 
+# Register user
 @app.route('/register', methods=["GET", "POST"])
 def register():
     form = RegisterForm()
@@ -96,7 +103,7 @@ def register():
 
         if User.query.filter_by(email=form.email.data).first():
             print(User.query.filter_by(email=form.email.data).first())
-            #User already exists
+            # User already exists
             flash("You've already signed up with that email, log in instead!")
             return redirect(url_for('login'))
 
@@ -166,11 +173,13 @@ def show_post(post_id):
     return render_template("post.html", post=requested_post, form=form, current_user=current_user)
 
 
+# About me
 @app.route("/about")
 def about():
     return render_template("about.html", current_user=current_user)
 
 
+# Contact me
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
@@ -180,6 +189,7 @@ def contact():
     return render_template("contact.html", msg_sent=False)
 
 
+# User sends me a message
 def send_email(name, email, phone, message):
     email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
     with smtplib.SMTP("smtp.mail.yahoo.com", 587) as connection:
@@ -188,6 +198,7 @@ def send_email(name, email, phone, message):
         connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
 
 
+# Create new post
 @app.route("/new-post", methods=["GET", "POST"])
 @admin_only
 def add_new_post():
@@ -208,6 +219,7 @@ def add_new_post():
     return render_template("make-post.html", form=form, current_user=current_user)
 
 
+# Edit post
 @app.route("/edit-post/<int:post_id>", methods=["GET", "POST"])
 @admin_only
 def edit_post(post_id):
@@ -230,6 +242,7 @@ def edit_post(post_id):
     return render_template("make-post.html", form=edit_form, is_edit=True, current_user=current_user)
 
 
+# Delete post
 @app.route("/delete/<int:post_id>")
 @admin_only
 def delete_post(post_id):
