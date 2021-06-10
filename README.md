@@ -2,24 +2,21 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/lenargasimov/blog?style=plastic)
 
+RESTful Blog with Editing.
+
+Blog Project on Python. Anyone can sign up and comment on the blog posts.
 
 On this blog, I document interesting things I learned and share my experience with you.
 
 ## Features
 
-🛠 `Portfolio`
+🌿 `Admin can create new blog posts, edit posts and delete posts`, all inside the blog website.
 
-🌿 `About me`
-
-📬 `Contact`, send a email through the feedback form
-
-☕ `CV`
-
-🔮 `FAQ`
+📬 `Contact`, send a email through the feedback form.
 
 ![blog](blog.png)
 
-Check out the blog at [lenargasimov.dev](https://lenargasimov.dev).
+Check out the blog at [https://lenar-blog.herokuapp.com](https://lenar-blog.herokuapp.com).
 
 
 ## 👨‍💻 Author
