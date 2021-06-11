@@ -1,18 +1,14 @@
 # Blog [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?&url=https://github.com/lenargasimov/blog&via=lenargasimov&hashtags=html,css,bootstrap,js,python,flask,developers)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/lenargasimov/blog?style=plastic)
+![](https://img.shields.io/github/forks/lenargasimov/blog.svg)
+![](https://img.shields.io/github/stars/lenargasimov/blog.svg)
 
 RESTful Blog with Editing.
 
 Blog Project on Python. Anyone can sign up and comment on the blog posts.
-
+Admin can create new blog posts, edit posts and delete posts, all inside the blog website.
 On this blog, I document interesting things I learned and share my experience with you.
-
-## Features
-
-🌿 `Admin can create new blog posts, edit posts and delete posts`, all inside the blog website.
-
-📬 `Contact`, send a email through the feedback form.
 
 ![blog](blog.png)
 
