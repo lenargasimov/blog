@@ -6,6 +6,8 @@
 
 RESTful Blog with Editing.
 
+![](https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif)
+
 Blog Project on Python. Anyone can sign up and comment on the blog posts.
 Admin can create new blog posts, edit posts and delete posts, all inside the blog website.
 On this blog, I document interesting things I learned and share my experience with you.
