@@ -19,9 +19,16 @@ Blog Project on Python. Anyone can sign up and comment on the blog posts.
 Admin can create new blog posts, edit posts and delete posts, all inside the blog website.
 On this blog, I document interesting things I learned and share my experience with you.
 
+Check out the blog at [https://lenar-blog.herokuapp.com](https://lenar-blog.herokuapp.com).
+
 ![blog](blog.png)
 
-Check out the blog at [https://lenar-blog.herokuapp.com](https://lenar-blog.herokuapp.com).
+- Python 3
+- Flask
+- Bootstrap 4
+- CKEditor
+- Gravatar
+- PostgreSQL
 
 ## 👨‍💻 Author
 
