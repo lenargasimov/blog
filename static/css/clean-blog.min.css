@@ -66,6 +66,9 @@ body{font-size:20px;color:#9ca2ac;font-family:'JetBrains Mono',monospace;backgro
 .fa-stack {
     color:#9ca2ac;
 }
+.fa-inverse {
+    color: #2e2e2e;
+}
 .post-date {
     color: #ff7c7c;
 }
