@@ -18,12 +18,12 @@
 <!--  <meta name="author" content="">-->
 
   <title>Lenar's Blog</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lenargasimov/blog/main/blog.png">
+  <link rel="icon" type="image/png" href="https://github.com/lenargasimov.png">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Lenar's Blog">
   <meta property="og:description" content="A collection of random musings.">
   <meta property="og:url" content="https://lenargasimov.dev">
-  <meta property="og:image" content="https://raw.githubusercontent.com/lenargasimov/blog/main/blog.png">
+  <meta property="og:image" content="https://github.com/lenargasimov.png">
   <meta property="profile:first_name" content="Lenar">
   <meta property="profile:last_name" content="Gasimov">
   <meta name="theme-color" content="#131313">
@@ -45,7 +45,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <img src="https://raw.githubusercontent.com/lenargasimov/lenargasimov.github.io/main/images/profile.png" alt="" style="width: 70px; border-radius: 50%">
+      <img src="https://github.com/lenargasimov.png" alt="" style="width: 70px; border-radius: 50%">
       <a class="navbar-brand" href="{{url_for('get_all_posts')}}">Lenar's Blog</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -68,6 +68,12 @@
             <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
           </li>
           {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
