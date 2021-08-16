@@ -63,6 +63,9 @@ body{font-size:20px;color:#9ca2ac;font-family:'JetBrains Mono',monospace;backgro
     font-family:verdana;
     font-size:11px;
 }
+.fa-stack {
+    color:#9ca2ac;
+}
 .actionBox {
     border-top:1px dotted #bbb;
     padding:10px;
