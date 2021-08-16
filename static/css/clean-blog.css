@@ -7,7 +7,7 @@
 body {
   font-size: 20px;
   color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 p {
@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 a {
@@ -164,7 +164,7 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 #mainNav .navbar-brand {
@@ -293,7 +293,7 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 @media only screen and (min-width: 768px) {
@@ -317,14 +317,14 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 header.masthead .post-heading .meta {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 header.masthead .post-heading .meta a {
@@ -384,7 +384,7 @@ header.masthead .post-heading .meta a {
 }
 .form-control {
     font-size: 1.2rem;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 .floating-label-form-group {
   font-size: 14px;
@@ -405,13 +405,13 @@ header.masthead .post-heading .meta a {
   border-radius: 0;
   background: none;
   box-shadow: none !important;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
   color: #868e96;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .floating-label-form-group label {
@@ -465,7 +465,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .btn-primary {
