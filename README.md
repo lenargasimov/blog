@@ -29,6 +29,7 @@ Check out the blog at [https://lenar-blog.herokuapp.com](https://lenar-blog.hero
 - CKEditor
 - Gravatar
 - PostgreSQL
+- Heroku
 
 ## 👨‍💻 Author
 
