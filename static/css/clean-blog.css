@@ -4,10 +4,10 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
-body {
+ body {
   font-size: 20px;
   color: #212529;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
 p {
@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -164,7 +164,7 @@ img::-moz-selection {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -293,7 +293,7 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -317,14 +317,14 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .post-heading .meta {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
 header.masthead .post-heading .meta a {
@@ -384,7 +384,7 @@ header.masthead .post-heading .meta a {
 }
 .form-control {
     font-size: 1.2rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .floating-label-form-group {
   font-size: 14px;
@@ -405,13 +405,13 @@ header.masthead .post-heading .meta a {
   border-radius: 0;
   background: none;
   box-shadow: none !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
 .floating-label-form-group input::-webkit-input-placeholder,
 .floating-label-form-group textarea::-webkit-input-placeholder {
   color: #868e96;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
 .floating-label-form-group label {
@@ -465,7 +465,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
